@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my page</title>
+    <style>
+   
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "Microsoft YaHei";
+        }
+        
+        #top{
+            background-color: #212529;
+            width:100%;
+            color:white;
+            display: flex;
+            line-height: 50px;
+            justify-content: space-between;
+        }
+        #top ul{
+            display: flex;
+            list-style-type: none;
+            margin-right: 100px;
+            
+        }
+        #top h2{
+            padding-left: 100px;
+        }
+        
+        #top ul li{
+            margin-right: 10px;
+            color:#ddd;
+        }
+        #main{
+            background-color: #212529;
+            display: flex;
+            width:100%;
+           
+
+        }
+        #main-left{
+            width:65%;
+            margin-left: 100px;
+            margin-top: 200px;
+        }
+        #main-left h2{
+            color: white;
+            font-size: 40px;
+        }
+        #main-left p{
+            font-size:16px;
+            color: white;
+            padding: 15px 0;
+        }
+        #main-left span{
+            color: #ffc107;
+        }
+        #main-left button{
+            color: white;
+            background-color: #0d6efd;
+            padding: 10px 20px;
+            font-size: 20px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+        #main-right{
+            width:60%;
+            margin-right: 100px;
+        }
+       
+        #three{
+            padding:0 100px;
+            display: flex;
+            margin-top: 50px;
+        }
+        #three>div{
+            padding:10px 30px;
+            text-align: center;
+            width:33.33%;
+        }
+        #left{
+            background-color: #212529;
+            margin-right: 50px;
+            color:white;
+        }
+        #mid{
+            background-color: #6c757d;
+            margin-right: 50px;
+            color:white;
+        }
+        #right{
+
+            background-color: #212529;
+            color:white;
+
+        }
+        #left a,#right a{
+            background-color: #0d6efd;
+            text-decoration: none;
+            color:white;
+            display:inline-block;
+            padding:10px 20px;
+            margin-top:20px;
+        }
+        #mid a{
+            background-color: #212529;
+            text-decoration: none;
+            color:white;
+            display:inline-block;
+            padding:10px 20px;
+            margin-top:20px;
+        }
+
+
+        @media(max-width:720px){
+
+            #main{
+                flex-direction: column;
+            }
+
+            #main-right img{
+            margin-left: 100px;
+            width:120%;
+            }
+            #top{
+                flex-direction: column;
+            }
+
+            #top ul{
+                margin-left: 100px;
+                margin-right: 0;
+                flex-direction: column;
+            }
+
+        }
+        @media(max-width:840px){
+            #left a,#right a{
+                flex-direction: column;
+            }
+        }
+
+
+</style>
+</head>
+<body>
+    <div id="top">
+
+        <h2>     第二组：五大砖
+        </h2>
+        <ul>
+            <li>团队组长</li>
+            <li>团队组员</li>
+            <li>团队分工</li>
+            <li>团队历史</li>
+        </ul>
+
+    </div>
+    <div id="main">
+        <div id="main-left">
+         <h2> 学习网页设计的知识进行 <span>网页制作</span></h2>  
+            <p>  我们团队致力于研发和创新各种网页设计功能
+            </p>
+            <button>
+                开始学习</button>
+
+        </div>
+        <div id="main-right">
+
+            <img src="./family-confirming-evacuation-site-svgrepo-com.svg" alt=""width="100%">
+
+        </div>
+        
+
+    </div><!--end of main-->
+    <div id="three">
+        <div id="left">
+            <h2>第一次实践</h2>  
+            <p>贵财网页重构</p>
+            <a href="https://mgchst.github.io/mgc1214/gc.html">更多</a>
+        </div>
+        <div id="mid">
+            <h2>第三次实践</h2>
+            <p>重构页面实现增加删除功能</p>
+            <a href="https://mgchst.github.io/mgc0624/todos%20-plain.html">更多</a>
+            
+        </div>
+        <div id="right">
+            <h2>第四次实践</h2>
+            <p>重构页面实现计算器功能</p>
+            <a href="https://mgchst.github.io/mgc/calculator.html">更多</a>
+            
+        </div>
+
+
+    </div>
+</body>
+</html>
